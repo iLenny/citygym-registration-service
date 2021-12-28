@@ -3,6 +3,7 @@ package com.lennycodes.citygym.entities;
 import com.lennycodes.citygym.entities.constants.UserGender;
 import com.lennycodes.citygym.entities.constants.UserRole;
 import com.lennycodes.citygym.entities.constants.UserStatus;
+import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
@@ -10,6 +11,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Entity
+@Data
 public class User {
     @Id
     @GeneratedValue
